@@ -1,0 +1,51 @@
+<!-- Navbar.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">Pemberi Tau Empire</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Pemberitahuan</a>
+      <a href="staff.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="member.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> MEMBER</a>
+      <a href="donation.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATION</a>
+      <button onclick="myFunction1()" class="w3-bar-item w3-button"><i class="fa fa-desktop"></i> Aktivity</button>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Link</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="index.html" class="w3-bar-item w3-button">Pemberitahuan</a>
+    <a href="staff.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+    <a href="member.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> MEMBER</a>
+    <a href="donation.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATION</a>
+    <button onclick="myFunction1()" class="w3-bar-item w3-button"><i class="fa fa-desktop"></i> Aktivity</button>
+    <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Link</a>
+</nav>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function myFunction1() {
+  alert("AkanaKen : Repair Web [coming soon]");
+}
+</script>
+</body>
+</html>
